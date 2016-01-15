@@ -20,6 +20,7 @@ History: {{ [ alert.convert(v) for v in alert.history[target][:100] ] }} {% end 
 
 View the graph: {{ alert.get_graph_url(alert.query) }}
 
+View the graph: test
 --
 
 You can configure alerts for notifications in your configuration file.
