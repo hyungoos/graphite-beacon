@@ -249,6 +249,7 @@ class GraphiteAlert(BaseAlert):
         self.url = self._graphite_url(
             self.query, graphite_url=self.reactor.options.get('graphite_url'), raw_data=True)
         LOGGER.debug('%s: url = %s', self.name, self.url)
+        self.testvar = self.reactor.options['testvar']
 
     @gen.coroutine
     def load(self):
